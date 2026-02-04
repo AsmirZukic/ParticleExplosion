@@ -1,19 +1,20 @@
 #pragma once
 
-#include "pixel.hpp"
-#include "window.hpp"
+#include "physics/Particle.h"
 #include <vector>
 
 class Swarm
 {
 private:
-  int numOfPixels = 200;
-  std::vector< Pixel* > swarm;
-  Window* window = Window::getInstance();
+  int numOfParticles = 2000;
+  std::vector<Particle> m_Particles;
+  int m_ScreenWidth;
+  int m_ScreenHeight;
 
 public:
-  Swarm();
+  Swarm(int screenWidth, int screenHeight);
   ~Swarm();
 
   void render();
+  void update(float dt, int mouseX, int mouseY, bool mouseDown);
 };
