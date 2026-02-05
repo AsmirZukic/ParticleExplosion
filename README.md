@@ -2,8 +2,6 @@
 
 A high-fidelity particle simulation framework built on the **Perun Engine**. This project demonstrates advanced physics simulations including rigid body collisions and atomic molecular dynamics.
 
-![](https://media.giphy.com/media/qADEBWL5hwAKT4y7KN/giphy.gif)
-
 ## Dependencies
 
 *   **SDL2**: Window management and input.
